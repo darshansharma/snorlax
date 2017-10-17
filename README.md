@@ -26,6 +26,6 @@ Feel free to fork it and I welcome your contribution to make snorlax bigger and 
 Snorlax Version = 1.0
 
 ## License
-This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.
 
 
