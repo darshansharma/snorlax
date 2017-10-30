@@ -12,6 +12,10 @@ Python 2.7 is already installed on most of the Linux distro.
 1. Install pip by command - `sudo apt-get install python-pip`
 2. Use command - `pip install -r requirements.txt` to install additional packages.
 
+## To-Do List
+1. Render the HTML on CLI using pandoc.
+2. Get some source website to search for commands.
+
 ### EXAMPLE 
 *Video and screenshot will be added soon.*
 
