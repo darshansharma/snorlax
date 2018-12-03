@@ -5,7 +5,7 @@ Short Description of Unix/Linux commands by one other command.
 Snorlax is written in Python which gives you a short description of a Unix/Linux command that you are going to type. I work with bash all the time and use bash for every command I type and every program I make so searching on web for a command all the time is a tedious job. Man pages are also very lengthy and sometimes when you are so much indulged in your work you don't want to diverge your mind to some other topic (reading man page of command).
 
 ### Prerequisites
-I have Ubuntu 16.04 during the time I code snorlax. Snorlax will work on MacOS or any Linux distro. You should have Python 2.7 plus some additional packages installed on your system.
+I was using Ubuntu 16.04 during the time I coded snorlax. Snorlax will work on MacOS or any Linux distro. You should have Python 2.7 plus some additional packages installed on your system.
 
 ### Installing 
 Python 2.7 is already installed on most of the Linux distro.
