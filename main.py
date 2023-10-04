@@ -1,18 +1,23 @@
 import requests
+import argparse
 from bs4 import BeautifulSoup
 import os
 import textwrap
 import sys
 import wikipedia
 
+sources = ['wikipedia', 'wiki', 'google', 'stackoverflow']
 
-query = str(sys.argv[2])
-site = str(sys.argv[1])
-print("Want to know about the command : " + query)
-print("Fetching information for the command "+query+" from "+site+".")
-if(site == "wikipedia" or site == "wiki"):
+parser = argparse.ArgumentParser()
+parser.add_argument("-s", "--site", default="wikipedia", choices=sources)
+parser.add_argument("-q", "--query", default="", required=True, help="command to search")
+
+args = parser.parse_args()
+print("Want to know about the command : " + args.query)
+print("Fetching information for the command "+args.query+" from "+args.site+".")
+if(args.site == "wikipedia" or args.site == "wiki"):
 	
-    result = wikipedia.summary("'%s' linux command" %query, sentences = 7)
+    result = wikipedia.summary("'%s' linux command" %args.query, sentences = 7)
     print(result)
                       
 # soup=BeautifulSoup(html_doc, 'html.parser')

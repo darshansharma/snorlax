@@ -16,6 +16,13 @@ Python 2.7 is already installed on most of the Linux distro.
 1. Render the HTML on CLI using pandoc.
 2. Get some source website to search for commands.
 
+## Usage
+
+- Search linux command
+```shell
+python main.py -s wikipedia -q pwd
+```
+
 ### EXAMPLE 
 *Video and screenshot will be added soon.*
 
