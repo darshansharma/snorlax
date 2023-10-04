@@ -11,6 +11,7 @@ I was using Ubuntu 16.04 during the time I coded snorlax. Snorlax will work on M
 Python 2.7 is already installed on most of the Linux distro.
 1. Install pip by command - `sudo apt-get install python-pip`
 2. Use command - `pip install -r requirements.txt` to install additional packages.
+3. For GPT API_KEY create .env and paste over there ``API_KEY = "Your openai API_KEY"``
 
 ## To-Do List
 1. Render the HTML on CLI using pandoc.
