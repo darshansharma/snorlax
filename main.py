@@ -5,6 +5,7 @@ import os
 import textwrap
 import sys
 import wikipedia
+from GPT_API import *
 
 sources = ['wikipedia', 'wiki', 'google', 'stackoverflow']
 
@@ -28,3 +29,30 @@ if(args.site == "wikipedia" or args.site == "wiki"):
             print textwrap.fill(textwrap.dedent(p.get_text()).strip(), initial_indent='', subsequent_indent='    ')
 
 '''
+# This code for Openai with langchain
+print(" DO you want to use GPT with langchain choose options ")
+print("1 Yes")
+print("2 No")
+
+try :
+    choice = int(input("Enter the option "))
+    if choice == 1:
+        print("What do you want to select the choice ")
+        print("1 Normal GPT")
+        print("2 GPT with langchain")
+        print("3 GPT with langchain using chatbot")
+        Gpt_choice = int(input("Enter the option "))
+        if Gpt_choice == 1:
+            Question = input("What is your question ")
+            answer = get_message(Question)
+            print(answer)
+        elif Gpt_choice == 2:
+            Question = input("What is your question ")
+            answer = LLMPromptTemplate(Question)
+            print(answer)
+        else:
+            Question = input("What is your question ")
+            answer = Chatbot(Question)
+            print(answer)
+except Exception as e :
+    print("the error is:", e)
